@@ -1,0 +1,25 @@
+/* pages/model/model.wxss */
+.header{width: 100%;position: relative;background: #6810cb;z-index: 2}
+.header_text{display: block; width: 100%;line-height: 44px;text-align: center; color: #fff}
+.some_list{width: 100%; box-sizing: border-box;padding: 10px 15px;position: absolute;top:44px;}
+.back{
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 24px;
+  height: 24px;
+}
+.model_box{width: 100%;margin-top: 15px;}
+.model_item{
+  width: 33.3%;
+  float: left;
+  margin-bottom: 15px;
+}
+.model_img{display:block;width:80%;height:120px;margin: 0 auto; border: 2px solid #ddd}
+.model_active{border: 2px solid #6810cb}
+.model_btn{width: 80%;display: block;margin: 20px auto; background: #8130dc; line-height: 44px; color: #fff;}
+
+
+
+
+

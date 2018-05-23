@@ -1,0 +1,17 @@
+<view class='container'>
+  <view class='header'>
+    <image src='../images/goback.png' class="back"></image>
+    <text class='header_text'>选择模板</text>
+  </view>
+  <view class='model_box clearfix'>
+    <view class='model_item' wx:for="{{modelSrc}}" >
+      <image 
+        src='{{item}}' 
+        class="model_img {{currentModelIndex==index?'model_active':''}}" 
+        bindtap='imgChange' 
+        data-current="{{index}}" ></image>
+    </view>
+
+  </view>
+  <button class='model_btn' bindtap='saveModel'>保存</button>
+</view>

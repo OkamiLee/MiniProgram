@@ -1,0 +1,19 @@
+<image src='{{modelimg}}' class='modelBack' ></image>
+<scroll-view class='editor_box'>
+  <view class='header'>
+    <image src='../images/goback.png' class="back" bindtap='back'></image>
+    <text class='header_text'>选择模板</text>
+  </view>
+  <form bindsubmit='editorSubmit' class='editor_box' data-test="{{dates}}">
+    <view class="section">  
+      <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-1-23" bindchange="bindDateChange">  
+        <view class="picker" data-text="{{dates}}" name="time" >  
+          日期: {{dates}}  
+        </view>  
+      </picker>  
+    </view>
+    <input placeholder='标题' name="title" class='title_inp'  value='{{title}}'></input>
+    <textarea placeholder='内容' name="textarea" class='content_text' value='{{text}}'></textarea>
+    <button class='model_btn' form-type='submit' >保存</button>
+  </form>
+</scroll-view>
